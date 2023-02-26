@@ -1,0 +1,135 @@
+/* selector {
+    property: value;
+} */
+
+/* logo animation  */
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: auto;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: auto;
+    }
+  }
+
+
+
+body {
+    margin: auto 0; /* resets the browser css*/
+    /* background-color: black; */
+}
+
+
+/***********************************************************************
+ *  Navigation Bar - these help with the main navigation bar at the top. 
+ **********************************************************************/
+
+.sticky {
+    position: fixed; /* will drag along as you roll down the screen*/
+    top: 0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex; /* activates the flex tool */
+    list-style: none;
+    font-size: .8em; 
+    margin: 0;
+    background-color: #ba0ca0;
+}
+
+li {
+    padding: 20px;
+}
+
+a{
+    color: #010112;
+    text-decoration: none;
+}
+
+
+.push{
+    
+    margin-left: auto;
+}
+
+/***********************************************************************
+ *  container zone logo 
+ **********************************************************************/
+
+ .container{
+    background-color: rgb(2,17,28);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    background-repeat: no-repeat;
+    width: cover;
+}
+
+
+.container, item1 {
+    height: 50vh;
+}
+
+.item1 {
+    /* align-self:flex-start; */
+    
+}
+
+.item2 {
+    /* animation-duration: 1.5s;
+    animation-name: slidein;   */
+    width: 300px;
+    height: 150px;
+}
+
+.item3 { 
+    
+    align-self:flex-end;
+    height: 50vh;
+}
+
+
+/***********************************************************************
+ *  
+ **********************************************************************/
+
+
+.zone {
+    
+    color:#ba0ca0;
+    font-family: 'Segoe UI';
+    font-size:2em;
+    border-radius:4px;
+    /* border:1px solid #050404; */
+    transition: all 0.3s linear;
+}
+
+
+
+
+/* .container {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container img {
+    width: 330px;
+    height: 615px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+
+.container img:hover {
+    transform: scale(1.1);
+} */
