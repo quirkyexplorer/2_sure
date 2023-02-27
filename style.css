@@ -29,6 +29,7 @@ body {
 
 .sticky {
     position: fixed; /* will drag along as you roll down the screen*/
+    z-index: 100;
     top: 0;
     width: 100%;
 }
@@ -60,7 +61,8 @@ a{
  *  container zone logo 
  **********************************************************************/
 
- .container{
+  .container {
+      margin-top: 70px;
     background-color: rgb(2,17,28);
     display: flex;
     flex-direction: row;
@@ -73,13 +75,10 @@ a{
 }
 
 
-.container, item1 {
-    height: 50vh;
-}
-
 .item1 {
     /* align-self:flex-start; */
     
+    height: 50vh;
 }
 
 .item2 {
@@ -89,8 +88,7 @@ a{
     height: 150px;
 }
 
-.item3 { 
-    
+.item3 {
     align-self:flex-end;
     height: 50vh;
 }
@@ -111,8 +109,80 @@ a{
     transition: all 0.3s linear;
 }
 
+/***********************************************************************
+ *  catalog
+ **********************************************************************/
+
+.catalog {
+    flex-direction: column;
+}
+
+.item4 {
+    /* background for pink skirt */
+    /* width: 100vh; */
+
+}
 
 
+/***********************************************************************
+ *  bkg1
+ **********************************************************************/
+.bk1 {
+    position: relative;
+}
+
+/* .item4 {
+    /* background for pink skirt */
+/* width: 100vh; 
+position: absolute;
+z-index: 1;
+
+}
+
+*/
+
+/* pink skirt */
+.product1 {
+    position: absolute;
+    z-index: 2;
+    top: 701px;
+    left: 1400px;
+    width: 351px;
+    height: 449px;
+    border-radius: 20px;
+
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.product1:hover {
+    transform: scale(1.25);
+
+}
+
+/***********************************************************************
+*  bkg2
+**********************************************************************/
+
+.bk2 {}
+
+.product2 {
+    position: absolute;
+    z-index: 3;
+    top: 1700px;
+    left: 1400px;
+    width: 351px;
+    height: 449px;
+    border-radius: 20px;
+
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.product2:hover {
+    transform: scale(1.25);
+
+}
 
 /* .container {
   
